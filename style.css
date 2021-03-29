@@ -1,6 +1,13 @@
 
 body {
-  background-color: linen;
+  background-color: rgb(231, 228, 224);
   text-align: center;
   margin-top: 50px;	
+}
+
+form .input{
+  /* padding: 0.4em 2em; */
+  width: 80%;
+  border-color: rgb(55, 55, 107);
+  border-radius: 6px;
 }
