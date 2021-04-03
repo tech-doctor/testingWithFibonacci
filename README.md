@@ -10,7 +10,8 @@ A script that calculate  the nth term of a fibonacci sequence and displays on th
 * Jest
 
 ### Purpose and Status: 
-Purpose of this project was to learn about writing unit test with jest
+Purpose of this project was to learn about writing unit test with jest.
+
 All functions, modules and tests  for this project are completed.
 
 
@@ -34,4 +35,4 @@ All functions, modules and tests  for this project are completed.
 ### Reqirement & Resources for development: 
  * Any IDE (VSCode, Bracket, Atom, Sublime e.t.c)
  * Basic knowledge on how to  write javascript functions and module
- * jest as a javascript testing tool
+ * Jest as a javascript testing tool
