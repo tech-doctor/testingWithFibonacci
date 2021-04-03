@@ -18,7 +18,7 @@ All functions, modules and tests  for this project are completed.
 ### Display: 
 ![Display](https://res.cloudinary.com/rririsrisurisux/image/upload/v1617451862/fibonaccci_kr75zm.gif)
 
-<img src="public/img/portfolio.png" width="60%" height="60%">
+<img src="img/testImg.png" width="60%" height="60%">
 
 
 ### live preview:  
