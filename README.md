@@ -29,7 +29,6 @@ All functions, modules and tests  for this project are completed.
 3. Type ``` git clone https://github.com/USER_NAME/REPOSITORY_NAME```.(make sure the link is the link to the repository)
 4. press enter to create your local clone.
 5. install required Jest depencies by running ``` npm install --save-dev jest ```.
-6. 
 
 ### Reqirement & Resources for development: 
  * Any IDE (VSCode, Bracket, Atom, Sublime e.t.c)
