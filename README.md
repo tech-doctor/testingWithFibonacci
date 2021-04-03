@@ -16,7 +16,7 @@ All functions, modules and tests  for this project are completed.
 
 
 ### Display: 
-![Display](https://res.cloudinary.com/rririsrisurisux/image/upload/v1617451443/ezgif.com-video-to-gif_quhv37.gif)
+![Display](https://res.cloudinary.com/rririsrisurisux/image/upload/v1617451862/fibonaccci_kr75zm.gif)
 
 
 ### live preview:  
