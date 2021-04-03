@@ -7,7 +7,7 @@
     event.preventDefault();
     const inputValue = input.value;
     //passing the value from fibonacci() function by destructuring
-    const {lastNum, penultimateNum, antePenultimateNum,  result} = fibonacci([0,1],inputValue)
+    const {a, lastNum, penultimateNum, antePenultimateNum,  result} = fibonacci([0,1],inputValue)
     // include a space after every comma in  the array list
     const resultSpace = result.join(', ');
     const calculationDetails =  `
@@ -19,20 +19,29 @@
       <p> The  first ${inputValue} terms of the fibonacci sequence are ${resultSpace}</p>
       `
     if(inputValue < 0 ){
-      Calculation.innerHTML = `<p>Enter a positive whole number and try again...</p>`
+      Calculation.innerHTML = `<p class = "negative-display">Enter a positive whole number and try again...</p>`
     }
     else if(inputValue >= 2){
       Calculation.innerHTML = calculationDetails; 
     } 
-    else{
-      Calculation.innerHTML = `<p>F<small>${inputValue}</small> = 1.</p>`
+    else if(inputValue == 0){
+      Calculation.innerHTML = `<p>F<small>${inputValue}</small> = 0.</p>
+      <p> The  first ${inputValue} terms of the fibonacci sequence is ${a}</p>`
     }
+    else{
+      Calculation.innerHTML = `<p>F<small>${inputValue}</small> = 1.</p>
+      <p> The  first ${inputValue} terms of the fibonacci sequence are ${resultSpace}</p>`
+    }
+
+    //console.log(event.target)
     
   }
 
 
-  const fibonacci = (result, num) => {
-    let a = result[0], b = result[1], f
+
+
+   const  fibonacci = (result, num) => {
+    let a = result[0], b = result[0] + 1, f
     for(let i = 2; i <= num; i++) {
       f = a + b; a = b; b = f;
       result.push(f)	
@@ -40,10 +49,29 @@
       const lastNum =  result[result.length-1];
       const penultimateNum = result[result.length-2];
       const antePenultimateNum = result[result.length-3];
-      return{
-        result, lastNum, penultimateNum, antePenultimateNum
-      };
+      if(num == 0){
+        return{
+          a,
+          result, lastNum, penultimateNum, antePenultimateNum
+        }
+      } else{
+        return{
+          result, lastNum, penultimateNum, antePenultimateNum
+        };
+      }
+      
+      console.log(result)
   };
+
+  // define(function (require, exports, module) {
+  //   module.exports = fibonacci;
+  // })
+  module.exports = fibonacci;
+  
+ 
+  // console.log(module.filename);
+  // console.log(module.id);
+  // console.log(module.exports);
 
   // OR
   //recursion/recursive function is when a function calls itself

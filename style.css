@@ -1,13 +1,71 @@
 
-body {
-  background-color: rgb(231, 228, 224);
+body{
+  background-color: rgb(253, 253, 253);
   text-align: center;
   margin-top: 50px;	
 }
 
 form .input{
-  /* padding: 0.4em 2em; */
-  width: 80%;
-  border-color: rgb(55, 55, 107);
+  padding: 0.4em 0.2em;
+  width: 25%;
+  border: 1px solid rgb(23, 33, 94);
   border-radius: 6px;
+  outline: rgb(0, 0, 0);
 }
+
+.body .heading{
+   font-size: 22px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   color: rgb(45, 45, 128);
+}
+.body .negative-display{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+
+.calculation p{
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: fade-in 2s;
+}
+
+  @keyframes fade-in{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 1
+    }
+  }
+
+
+.calculation p:first-child{
+  font-weight: 800;
+}
+
+
+@media(max-width: 800px) {
+  form .input{
+    width: 50%;
+  }
+}
+
+@media(max-width: 600px) {
+  form .input{
+    width: 70%;
+  }
+  .body .heading{
+    font-size: 18px;
+ }
+}
+
+
+
+
+
+
