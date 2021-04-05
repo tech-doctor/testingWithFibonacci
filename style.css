@@ -13,7 +13,7 @@ form .input{
   outline: rgb(0, 0, 0);
 }
 
-.body .heading{
+.body .heading:not(small){
    font-size: 22px;
    font-family: Arial, Helvetica, sans-serif;
    font-weight: 700;

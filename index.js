@@ -57,8 +57,8 @@
           result, lastNum, penultimateNum, antePenultimateNum
         };
       }
-      
       console.log(result)
+      
   };
 
 
