@@ -1,8 +1,5 @@
 
-
 const fibonacci = require('./index.js')
-
-//import fibonacci from './index.js'
 
 describe(" fibonacci sequence", () => {	
 	test('6 term of fibonacci is 8 ', () => {
@@ -29,10 +26,3 @@ describe(" fibonacci sequence", () => {
 	});
 })
 
-
-
-//const submitValue = require('./index.js')
-
-
-
-//tray()

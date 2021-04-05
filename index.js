@@ -36,9 +36,7 @@
     //console.log(event.target)
     
   }
-
-
-
+   
 
    const  fibonacci = (result, num) => {
     let a = result[0], b = result[0] + 1, f
@@ -63,23 +61,7 @@
       console.log(result)
   };
 
-  // define(function (require, exports, module) {
-  //   module.exports = fibonacci;
-  // })
-  module.exports = fibonacci;
-  
- 
-  // console.log(module.filename);
-  // console.log(module.id);
-  // console.log(module.exports);
 
-  // OR
-  //recursion/recursive function is when a function calls itself
 
-  // let fibonacci =  function fib(num) {
-  // 	if(num <= 2) {
-  // 		return 1
-  // 	}
-  // 	return fib(num - 2) + fib(num - 1)
-  // }
-  // console.log(fibonacci(6))
+
+ module.exports = fibonacci;
